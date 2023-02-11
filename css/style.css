@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+header{
+    background-color: #000000;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+body{
+    font-size: 20px;
+    font-family: "Spoqa Han Sans Neo","Apple SD Gothic Neo","Segoe UI",sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    background-color: #1b1b1b;
+    color: aliceblue;
+    z-index: 1;
+    overflow-x:hidden ;
+    /* margin: 0 10%; */
+    
+}
+
+.welcome {
+    display:grid;
+    flex-wrap: wrap;
+    place-content: center;
+    text-align: center;
+    color: aliceblue;
+    min-height: 300px;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)), url('https://i.imgur.com/ZBwRLDO.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    box-sizing: border-box;
+}
+
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color:aliceblue;
+    text-align: center;
+    min-height: 400px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.header > * {
+
+    width: 300px;
+    min-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: #252525;
+    cursor: pointer;
+    transition: 1s;
+    margin: 30px;
+} 
+
+.header h4 {
+    padding-top: 20px;
+    font-size: 1.5em;
+}
+.header p {
+    font-size: -0.5em;
+    padding-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(167, 168, 169)
+}
+
+.header img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.foto {
+    display: flex;
+    flex-direction: column;
+}
+
+.header >*:hover {
+    transform: translateY(-20px);
+}
+
+.popular {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color:aliceblue;
+    text-align: center;
+    min-height: 300px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    
+}
+
+.popular > * {
+
+    width: 300px;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    padding: 10px none;
+    overflow: hidden;
+    background: #252525;
+    transition: 1s;
+    margin : 30px;
+    flex-direction: column;
+} 
+
+.popular >*:hover {
+    transform: translateY(-20px);
+}
+
+.popular img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+.popular h4 {
+    margin-top: 5px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    font-size: 1.1em;
+}
+.popular p {
+    font-size:18px;
+    padding-bottom: 20px;
+    text-align: start;
+    align-self :baseline;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: rgb(167, 168, 169)
+}
+
+.garis-1 {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: aliceblue;
+    margin-top: 80px;
+    opacity: 50%;
+}
+.garis-2 {
+    display: block;
+    width: 15%;
+    height: 1px;
+    margin-top: 10px;
+    border-radius: 5px;
+    align-items: flex-start;
+    background-color: aliceblue;
+    opacity: 50%;
+}
+
+/* nav */
+.navbar {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    min-height: 70px;
+    text-align: center;
+    padding: 0 10% ;
+    gap: 10px;
+    z-index: 4;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    max-width: 120px;
+    max-height: 120px;
+    object-fit: cover;
+}
+
+.nav-menu {
+    list-style: none;
+    text-decoration: none;
+    display:flex;
+    align-items: center;
+    justify-items: end;
+    gap: 60px;
+    
+
+}
+
+.nav-menu a {
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
+    transition: 1s;
+    text-align: center;
+}
+
+.nav-menu a:hover{
+    text-size-adjust: 1.2em;
+    color: rgb(237, 32, 64);
+}
+
+/* hamburger menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    margin-top: 20px;
+
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: aliceblue;
+    border-radius: 3px;
+    -webkit-transition: all 0.5 ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+/* Footer */
+footer{
+    position: absolute bottom;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background: #111;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color:rgb(237, 32, 64);
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+
+/* Guide Page */
+.guide-list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    /* background-color:#252525; */
+    border-radius: 6px;
+    padding: 20px;
+    gap: 40px
+}
+
+.container-1 {
+    margin: 0 10%;
+}
+
+.guide-list ul li{
+    margin: 10px 10px;
+    font-size: 1.5em;
+    padding: 10px 0;
+}
+
+.guide-list h1{
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+
+
+.guide-list .fundamental{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+    background: linear-gradient(to right, rgba(237, 32, 64,1),rgba(237, 32, 64,0.9),rgba(237, 32, 64,0.5),rgba(237, 32, 64,0.3)), url('https://i.imgur.com/BkfIFqA.png');
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+}
+
+.guide-list .anatomy{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+    background: linear-gradient(to right, rgba(237, 32, 64,1),rgba(237, 32, 64,0.9),rgba(237, 32, 64,0.5),rgba(237, 32, 64,0.3)), url('https://i.imgur.com/qLJ4Lee.png');
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+}
+.guide-list .anatomy-2{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+    background: linear-gradient(to right, rgba(237, 32, 64,1),rgba(237, 32, 64,0.9),rgba(237, 32, 64,0.5),rgba(237, 32, 64,0.3)), url('https://i.imgur.com/GZbGNYA.jpeg');
+    background-position: center;
+    padding: 20px;
+}
+
+.guide-list .clothing{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+    background: linear-gradient(to right, rgba(237, 32, 64,1),rgba(237, 32, 64,0.9),rgba(237, 32, 64,0.5),rgba(237, 32, 64,0.3)), url('https://i.imgur.com/P5B1KYz.png');
+    background-position: center;
+    padding: 20px;
+}
+
+
+
+
+/* Categories */
+.guide-list .tutorial{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)), url('https://i.imgur.com/ZBwRLDO.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.guide-list .tips{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)), url('https://i.imgur.com/d1c2IAd.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+.guide-list .speedpaint{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)), url('https://i.imgur.com/9PI6UfT.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.guide-list .gallery-categories{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)), url('https://i.imgur.com/wfzsGYE.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.gallery-popular-1 h4{
+    margin: 10px;
+}
+
+.gallery-content-1{
+    padding: 0 10%;
+    background-color:#1b1b1b;
+}
+
+.gallery-content-1 .garis{
+    display: block;
+    width: 100%;
+    height: 10%;
+}
+
+
+@media screen and (max-width: 850px) {
+}
+@media screen and (max-width: 660px) {
+    .hamburger {
+        display: block;
+        top: 10px;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        align-content: space-around;
+        right: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #121212;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: 0.7s;
+        z-index: 5;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        right: 0;
+    }
+
+}
